@@ -1,0 +1,25 @@
+{
+  "name": "diffdom",
+  "version": "1.0.0",
+  "description": "DOM Diffing lib",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "test.js",
+    "dist": "terser --compress --mangle -- ./src/DiffDOM.js -o ./dist/DiffDOM.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jameslaydigital/DiffDOM.git"
+  },
+  "author": "James Lay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jameslaydigital/DiffDOM/issues"
+  },
+  "homepage": "https://github.com/jameslaydigital/DiffDOM#readme",
+  "dependencies": {
+    "terser": "^3.17.0"
+  }
+}
