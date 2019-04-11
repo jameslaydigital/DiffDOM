@@ -1,7 +1,7 @@
 "use strict";
 
 (() => {
-    function apply_diffs(root, newstr) {
+    function diff_dom(root, newstr) {
         const frag = document.createElement("div");
         frag.innerHTML = newstr;
         diff_children(root, frag);
@@ -82,5 +82,5 @@
         }
     }
 
-    window.diff_dom = apply_diffs;
+    window.diff_dom = diff_dom;
 })();

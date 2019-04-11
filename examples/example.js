@@ -21,5 +21,5 @@ function get_view(model) {
 
 const root = document.getElementById("approot");
 setInterval(() => {
-    apply_diffs(root, get_view(model));
+    diff_dom(root, get_view(model));
 }, 1000);
