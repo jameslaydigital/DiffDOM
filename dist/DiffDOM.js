@@ -44,7 +44,6 @@
 
         // add/set other attrs //
         for (const attr_name of newDOM.getAttributeNames()) {
-            console.log(rootDOM[attr_name], newDOM[attr_name]);
             if (rootDOM[attr_name] !== newDOM[attr_name]) {
                 rootDOM[attr_name] = newDOM.getAttribute(attr_name);
             }

@@ -7,7 +7,7 @@
   },
   "scripts": {
     "test": "test.js",
-    "dist": "terser --compress --mangle -- ./src/DiffDOM.js -o ./dist/DiffDOM.min.js"
+    "dist": "cp src/DiffDOM.js ./dist/DiffDOM.js && terser --compress --mangle -- ./src/DiffDOM.js > ./dist/DiffDOM.min.js"
   },
   "repository": {
     "type": "git",
