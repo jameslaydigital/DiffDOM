@@ -1,25 +1,26 @@
 "use strict";
 
-const model = [
-    {fname: "jim", lname: "bob"},
-    {fname: "johnny", lname: "blue"},
-    {fname: "sarah", lname: "red"},
-    {fname: "jessica", lname: "greene"},
-];
+const model = {
+    title: "Users",
+    uptime: 0.0,
+    users: [
+        { name: "Johnny" },
+        { name: "Sarah" },
+        { name: "Sally" },
+    ]
+};
 
-function get_view(model) {
-    return `
-        <div>
-            <ul>
-            ${model.map(user => 
-                `<li><input value="${user.fname}" />${user.fname} ${user.lname}</li>`
-            ).join("")}
-            </ul>
-        </div>
-    `;
-}
+const get_view = () => `
+    <h1>${model.title}</h1>
+    <div>Uptime: ${model.uptime}</div>
+    <ul>
+        ${model.users.map(user => `<li><input value="${user.name}" /></li>`).join("")}
+    </ul>
+`;
 
 const root = document.getElementById("approot");
+
 setInterval(() => {
-    diff_dom(root, get_view(model));
+    model.uptime++;
+    diff_dom(root, get_view());
 }, 1000);
