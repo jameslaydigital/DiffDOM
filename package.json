@@ -7,18 +7,18 @@
   },
   "scripts": {
     "test": "test.js",
-    "dist": "cp src/DiffDOM.js ./dist/DiffDOM.js && terser --compress --mangle -- ./src/DiffDOM.js > ./dist/DiffDOM.min.js"
+    "dist": "cp src/diff_dom.js ./dist/diff_dom.js && terser --compress --mangle -- ./src/diff_dom.js > ./dist/diff_dom.min.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jameslaydigital/DiffDOM.git"
+    "url": "git+https://github.com/jameslaydigital/diff_dom.git"
   },
   "author": "James Lay",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jameslaydigital/DiffDOM/issues"
+    "url": "https://github.com/jameslaydigital/diff_dom/issues"
   },
-  "homepage": "https://github.com/jameslaydigital/DiffDOM#readme",
+  "homepage": "https://github.com/jameslaydigital/diff_dom#readme",
   "dependencies": {
     "terser": "^3.17.0"
   }

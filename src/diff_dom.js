@@ -82,5 +82,5 @@
         }
     }
 
-    window.apply_diffs = apply_diffs;
+    window.diff_dom = apply_diffs;
 })();
